@@ -1,8 +1,6 @@
-/* normalize.css - versão simplificada */
-
 html {
-  line-height: 1.15; /* melhorar a legibilidade */
-  -webkit-text-size-adjust: 100%; /* evitar zoom em texto no iOS */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -89,14 +87,3 @@ button,
 input {
   overflow: visible;
 }
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: bu
