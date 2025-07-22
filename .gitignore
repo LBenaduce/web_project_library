@@ -1,32 +1,4 @@
-# macOS
 .DS_Store
-
-# Editor VS Code
-.vscode/
-*.code-workspace
-
-# Node.js
-node_modules/
-dist/
-
-# Logs
-*.log
-
-# Cache SASS/SCSS
-.sass-cache/
-
-# Arquivos temporários do sistema ou editores
-*.swp
-Thumbs.db
-ehthumbs.db
-
-# Diretórios de build
-build/
-out/
-
-# Ignore arquivos de ambiente local
-.env
-
 
 
 
