@@ -24,31 +24,18 @@ body {
   margin: 0;
 }
 
-/** 
-   * Renderiza o elemento `main` de forma consistente no IE. 
-   */
+
 
 main {
   display: block;
 }
 
-/** 
-   * Corrige o tamanho da fonte e margem nos elementos `h1` dentro dos contextos `section` e 
-   * `article` no Chrome, Firefox, e Safari. 
-   */
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* Conteúdo agrupado
-     ========================================================================== */
-
-/**
-   * 1. Adiciona o tamanho da caixa correto no Firefox. 
-   * 2. Mostra o excesso no Edge e no IE. 
-   */
 
 hr {
   box-sizing: content-box; /* 1 */
@@ -56,31 +43,20 @@ hr {
   overflow: visible; /* 2 */
 }
 
-/**
-   * 1. Corrige a herança e o dimensionamento do tamanho da fonte em todos os navegadores. 
-   * 2. Corrige o tamanho ímpar da fonte `em` em todos os navegadores. 
-   */
+
 
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
-/* Semântica a nível de texto
-     ========================================================================== */
 
-/** 
- * Remove o fundo cinza dos links ativos no IE 10. 
- */
 
 a {
   background-color: transparent;
 }
 
-/** 
- * 1. Remove a borda inferior no Chrome 57- 
- * 2. Adiciona a decoração de texto correta no Chrome, Edge, IE, Opera e Safari. 
- */
+
 
 abbr[title] {
   border-bottom: none; /* 1 */
@@ -88,19 +64,12 @@ abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
 
-/** 
- * Adiciona o peso de fonte correto no Chrome, Edge e Safari. 
- */
 
 b,
 strong {
   font-weight: bolder;
 }
 
-/** 
- * 1. Corrige a herança e o dimensionamento do tamanho da fonte em todos os navegadores. 
- * 2. Corrige o tamanho ímpar da fonte `em` em todos os navegadores. 
- */
 
 code,
 kbd,
@@ -109,18 +78,11 @@ samp {
   font-size: 1em; /* 2 */
 }
 
-/** 
- * Adiciona o tamanho de fonte correto em todos os navegadores. 
- */
 
 small {
   font-size: 80%;
 }
 
-/** 
- * Impede que os elementos `sub` e `sup` afetem a altura da linha em 
- * todos os navegadores. 
- */
 
 sub,
 sup {
@@ -138,24 +100,11 @@ sup {
   top: -0.5em;
 }
 
-/* Conteúdo incorporado
-     ========================================================================== */
-
-/** 
- * Remove a borda das imagens dentro dos links no IE 10. 
- */
 
 img {
   border-style: none;
 }
 
-/* Formulários
-     ========================================================================== */
-
-/** 
- * 1. Altera os estilos de fonte em todos os navegadores. 
- * 2. Remove a margem no Firefox e Safari. 
- */
 
 button,
 input,
@@ -168,10 +117,7 @@ textarea {
   margin: 0; /* 2 */
 }
 
-/** 
- * Mostra o excesso no IE. 
- * 1. Mostra o excesso no Edge. 
- */
+
 
 button,
 input {
