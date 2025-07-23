@@ -34,7 +34,7 @@
   margin: 8px 0 0;
   display: flex;
   column-gap: 20px;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
@@ -127,7 +127,7 @@
   justify-content: center;
   gap: 40px;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   max-width: 1200px;
   margin: 40px auto;
 }
