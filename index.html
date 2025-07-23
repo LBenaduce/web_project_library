@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Biblioteca Triple Peaks - Expanda seus conhecimentos em desenvolvimento ou simplesmente aproveite o ambiente para estudar e trabalhar."
-    />
-    <meta
-      name="keywords"
-      content="biblioteca, livros, desenvolvimento, programação, leitura, estudos"
-    />
     <title>Biblioteca Triple Peaks</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
     <div class="page">
       <header class="header">
@@ -27,14 +20,20 @@
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#staff">Escolhas da Equipe</a>
+              <a class="nav__link" href="#staff">Escolhas do Leitor</a>
             </li>
-            <li><a class="nav__link" href="#">Eventos</a></li>
-            <li><a class="nav__link" href="#">Seja um membro</a></li>
-            <li><a class="nav__link" href="#">Contatos</a></li>
+            <li>
+              <a class="nav__link" href="#eventos">Eventos</a>
+            </li>
+            <li>
+              <a class="nav__link">Seja um membro</a>
+            </li>
+            <li>
+              <a class="nav__link">Contatos</a>
+            </li>
           </ul>
         </nav>
-        <section class="header__content" id="headerContent">
+        <div class="header__content">
           <div>
             <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
             <p class="header__description">
@@ -46,86 +45,168 @@
           </div>
           <img
             src="./images/inside_the_library.png"
-            alt="Imagem de dentro da biblioteca"
+            alt="Ilustração 'Dentro da biblioteca'"
             class="header__image"
           />
-        </section>
-        <footer class="header__footer">
+        </div>
+        <div class="header__footer">
           <p class="header__address">Triple Peaks, 200 Success Avenue</p>
-        </footer>
+        </div>
       </header>
 
       <main class="content">
         <section class="staff" id="staff">
-          <div class="card-container">
-            <h2 class="staff__title">Escolhas da Equipe</h2>
-            <h3 class="staff__subtitle">Que nossos leitores adoram</h3>
-            <ul class="staff__cards">
-              <li class="card">
-                <div class="card__content">
-                  <h3 class="card__title">Algoritmos: Teoria e Prática</h3>
-                  <p class="card__text">
-                    Esse livro é uma introdução adequada aos algoritmos!
-                    Introdução aos algoritmos, ou CLRS, aprofunda e abrange uma
-                    variedade de algoritmos em capítulos independentes.
-                  </p>
-                  <p class="card__footer">
-                    Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                    Clifford Stein
-                  </p>
-                </div>
-              </li>
-              <li class="card">
-                <div class="card__content">
-                  <h3 class="card__title">
-                    A Estrutura e Interpretação de Programas de Computador
-                    (SICP)
-                  </h3>
-                  <p class="card__text">
-                    Esse é um dos melhores livros para aprender os fundamentos
-                    da programação. Apresentado pelo MIT em um de seus cursos
-                    básicos de programação, o SICP é um livro de programação de
-                    uso geral que usa Esquema para ilustrar vários conceitos de
-                    programação.
-                  </p>
-                  <p class="card__footer">
-                    Harold Abelson, Gerald Jay Sussman, Julie Sussman
-                  </p>
-                </div>
-              </li>
-              <li class="card">
-                <div class="card__content">
-                  <h3 class="card__title">
-                    O Codificador Limpo: Um Código de Conduta para Programadores
-                    Profissionais
-                  </h3>
-                  <p class="card__text">
-                    Compilado pelo experiente desenvolvedor de software e autor
-                    Robert C. Martin (também conhecido como Tio Bob), esse livro
-                    aborda as técnicas e ferramentas da verdadeira capacidade do
-                    software. Explica como escrever um código limpo e demonstrar
-                    como cultivar a atitude de um programador competente e
-                    profissional.
-                  </p>
-                  <p class="card__footer">Robert C. Martin</p>
-                </div>
-              </li>
-              <li class="card">
-                <div class="card__content">
-                  <h3 class="card__title">
-                    Code Complete: Um Manual Prático de Construção de Software
-                  </h3>
-                  <p class="card__text">
-                    Quer saber como escrever um código robusto,
-                    independentemente da arquitetura por trás da linguagem de
-                    programação escolhida? Em seguida, considere a leitura do
-                    livro: Code Complete. Ele aborda de forma abrangente tudo
-                    relacionado à boa estrutura de código.
-                  </p>
-                  <p class="card__footer">Steve McConnell</p>
-                </div>
-              </li>
-            </ul>
+          <h2 class="staff__title">Escolhas do Leitor</h2>
+          <p class="staff__subtitle">Uma seleção que guardo com carinho</p>
+          <ul class="staff__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Robinson Crusoé</h3>
+                <p class="card__text">
+                  O livro conta a história de Robinson Crusoé que, após um
+                  naufrágio, passa 28 anos em uma ilha deserta. Ele aprende a se
+                  virar sozinho, enfrentando desafios e construindo uma nova
+                  vida, até encontrar o nativo Sexta-Feira, com quem forma uma
+                  amizade. A obra aborda temas como sobrevivência, solidão,
+                  amizade e superação.
+                </p>
+                <p class="card__footer">Daniel Defoe</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Venha Ver o Pôr do Sol</h3>
+                <p class="card__text">
+                  Os contos deste livro de suspense mostram situações
+                  inesperadas onde o drama e o fantástico se misturam, alterando
+                  o cotidiano de pessoas comuns. Cada narrativa nos leva a um
+                  universo paralelo, no qual acontecimentos extraordinários
+                  influenciam profundamente a vida dos personagens.
+                </p>
+                <p class="card__footer">Lygia Fagundes Telles</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Meu Pé de Laranja Lima</h3>
+                <p class="card__text">
+                  O livro conta a história de Zezé, um menino pobre que encontra
+                  amizade em seu pé de laranja lima. Apesar das dificuldades,
+                  ele usa a imaginação para escapar da realidade e encontra
+                  esperança na árvore. Zezé enfrenta desafios familiares e
+                  aprende lições sobre amor e superação. É uma narrativa tocante
+                  sobre infância, inocência e amizade.
+                </p>
+                <p class="card__footer">José Mauro de Vasconcelos</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Luna Clara & Apolo Onze</h3>
+                <p class="card__text">
+                  Luna Clara, uma menina de doze anos, vive em Desatino do Norte
+                  esperando o pai que nunca voltou. Em Desatino do Sul, Apolo
+                  Onze cresce em meio a uma festa que dura anos, buscando seus
+                  desejos. As vidas dessas duas crianças e suas cidades se
+                  entrelaçam por meio de coincidências coloridas. Juntos, eles
+                  vivem acontecimentos que transformam suas histórias e seus
+                  mundos.
+                </p>
+                <p class="card__footer">Adriana Falcão</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="events" id="eventos">
+          <div class="events__content">
+            <h2 class="events__heading">Próximos eventos:</h2>
+            <h3 class="events__title">
+              Em homenagem à Joan Feynman: Mulheres na Astrofísica
+            </h3>
+            <div class="event-info events__info-section">
+              <div class="event-info__item">
+                <img
+                  src="./images/icon_calendar.svg"
+                  alt="Calendar icon"
+                  class="event-info__icon"
+                />
+                <p class="event-info__text">Segunda-feira, 12 de janeiro</p>
+              </div>
+              <div class="event-info__item">
+                <img
+                  src="./images/icon_pin.svg"
+                  alt="Pin icon"
+                  class="event-info__icon"
+                />
+                <p class="event-info__text">
+                  Sala de Conferências da Biblioteca Triple Peaks e Online
+                </p>
+              </div>
+            </div>
+            <p class="events__description">
+              Neste evento, que homenageia a pessoa que inspirou o nome da
+              biblioteca, vamos ter uma palestra que vai nos levar para uma
+              jornada explorando alguns das pesquisadoras mais proeminentes no
+              mundo da ciência espacial. É fácil aceitar o equívoco de que esse
+              campo era em sua maioria dominado por homens, mas nossa palestra
+              visa mudar essa noção e provar que esse não é o caso desde, pelo
+              menos, o século XVIII.
+            </p>
+            <a href="#" class="events__more">Mais eventos &rarr;</a>
+          </div>
+          <div class="events__cover">
+            <img
+              src="./images/cafe.png"
+              alt="Área de estudos"
+              class="events__image"
+            />
+
+            <div class="person person_name_feynman">
+              <p class="person__caption">Joan Feynman</p>
+              <img
+                src="./images/person_feynman.png"
+                alt="Foto de Joan Feynman"
+                class="person__image person__image_size_l"
+              />
+            </div>
+            <div class="person person_name_burbidge">
+              <p class="person__caption">Margaret Burbidge</p>
+              <img
+                src="./images/person_burbidge.png"
+                alt="Foto de Margaret Burbidge"
+                class="person__image person__image_size_m"
+              />
+            </div>
+             <div class="person person_name_cannon">
+
+              <img
+                src="./images/person_cannon.png"
+                alt="Foto de Annie Jump Cannon"
+                class="person__image person__image_size_m"
+              />
+               <p class="person__caption">Annie Jump Cannon</p>
+              </div>
+             <div class="person person_name_mitchell">
+              <img
+                src="./images/person_mitchell.png"
+                alt="Foto de Maria Mitchell"
+                class="person__image person__image_size_s"
+              />
+              <p class="person__caption">Maria Mitchell</p>
+              </div>
+              <div class="person person_name_tarter">
+              <p class="person__caption">Jill Tarter</p>
+              <img
+                src="./images/person_tarter.png"
+                alt="Foto de Jill Tarter"
+                class="person__image person__image_size_m"
+              />
+              </div>
+            </div>
           </div>
         </section>
       </main>
