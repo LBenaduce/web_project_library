@@ -438,7 +438,7 @@ width: 80px;
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) 
+@media (max-width: 768px) {
 
   .footer__columns {
     flex-direction: column;
@@ -459,4 +459,4 @@ width: 80px;
     margin-left: 0; 
     text-align: center;
   }
-
+}
