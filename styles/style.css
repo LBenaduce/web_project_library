@@ -438,7 +438,9 @@ width: 80px;
   margin-bottom: 20px;
 }
 
-.footer__columns {
+@media (max-width: 768px) 
+
+  .footer__columns {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -457,7 +459,4 @@ width: 80px;
     margin-left: 0; 
     text-align: center;
   }
-
-
-@media (max-width: 768px)
 
