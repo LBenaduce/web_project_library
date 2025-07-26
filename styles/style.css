@@ -1,4 +1,4 @@
-/* Página */
+
 .page {
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -8,17 +8,16 @@
   min-width: 1100px;
 }
 
-/* Header */
 .header {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  min-height: 720px;
-  max-height: 1600px;
   padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
   margin: auto;
+  max-height: 1600px;
+  min-height: 1100px;
 }
 
 .nav {
@@ -27,17 +26,18 @@
 }
 
 .nav__logo {
+  padding: 80px 58px;
   width: 58px;
   height: 80px;
-  padding: 80px 58px;
 }
 
 .nav__links {
   display: flex;
   column-gap: 20px;
+  flex-wrap: nowrap;
   list-style-type: none;
+  padding-left: 0;
   margin-top: 8px;
-  padding: 0;
 }
 
 .nav__link {
@@ -45,7 +45,9 @@
   text-decoration: none;
   font-weight: bold;
   margin: auto;
+  padding-left: 0;
 }
+
 
 .header__content {
   display: flex;
@@ -54,18 +56,20 @@
 }
 
 .header__title {
+  justify-content: flex-start;
   padding: 128px 32px;
   font-size: 62px;
   line-height: 76px;
-  font-weight: 500;
+  font-weight: 500; 
   max-width: 635px;
   margin-top: 128px;
 }
 
 .header__description {
   max-width: 515px;
-  font-size: 20px;
-  line-height: 30px;
+  font-size:20px;
+  line-height:30px;
+  justify-content: flex-start;
   margin-top: 32px;
 }
 
@@ -92,13 +96,13 @@
   color: #838383;
 }
 
-/* Staff */
 .staff {
   background-image: url("../images/staff_picks_background.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 100px 140px;
+  padding: 100px 100px 140px 100px;
+  
 }
 
 .staff__title {
@@ -106,8 +110,8 @@
   font-size: 44px;
   line-height: 52px;
   font-weight: 400;
-  margin: 0 0 24px;
   color: #ffffff;
+  margin: 0 0 24px;
 }
 
 .staff__subtitle {
@@ -123,28 +127,28 @@
   max-width: 760px;
   margin: 68px auto 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 40px 40px;
   list-style-type: none;
-  padding: 0;
-}
+  padding-left: 0;
+  }
 
-/* Card */
 .card {
   background-color: #fff;
   border-radius: 6px;
-  padding: 32px 40px 20px 32px;
+  padding: 32px 40px 20px 32px;   
   box-sizing: border-box;
   width: 360px;
   height: 420px;
 }
 
 .card__content {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__title {
@@ -155,45 +159,41 @@
 }
 
 .card__text {
+  margin: 20px 0 0;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 20px;
 }
 
 .card__footer {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
   margin-top: auto;
 }
-
-/* Events */
 .events {
   padding: 100px 0 120px 80px;
   display: flex;
+  align-items: start;
   justify-content: space-between;
-  background-color: #f2f2f2;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .events__content {
   flex-basis: 580px;
 }
 
-.events__heading,
-.events__title,
-.event-info__text {
-  font-weight: 500;
-}
-
 .events__heading {
   font-size: 20px;
+  font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
 
 .events__title {
   font-size: 44px;
+  font-weight: 500;
   line-height: 52px;
   margin: 32px 0 0;
 }
@@ -206,18 +206,20 @@
   display: flex;
   align-items: center;
   margin-bottom: 4px;
+  font-weight: 500;
 }
 
 .event-info__icon {
-  margin-right: 12px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 12px;
   width: 24px;
   height: 24px;
 }
 
 .event-info__text {
   font-size: 20px;
+  font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
@@ -233,6 +235,7 @@
 
 .events__cover {
   flex-grow: 1;
+  flex-shrink: 0;
   flex-basis: 780px;
   max-width: 780px;
   position: relative;
@@ -242,7 +245,6 @@
   max-width: 100%;
 }
 
-/* Pessoas */
 .person {
   position: absolute;
   display: flex;
@@ -251,27 +253,52 @@
   gap: 10px;
 }
 
-.person_name_feynman { top: -30px; left: 319px; }
-.person_name_burbidge { top: 96px; right: 125px; }
-.person_name_cannon { bottom: 18px; right: 216px; }
-.person_name_mitchell { bottom: 82px; left: 142px; }
-.person_name_tarter { top: 79px; left: 159px; }
+.person_name_feynman {
+top: -30px;
+left: 319px; 
+}
+
+.person_name_burbidge {
+  top: 96px;
+  right: 125px;
+}
+
+.person_name_cannon {
+  bottom: 18px;
+  right: 216px;
+}
+
+.person_name_mitchell {
+  bottom: 82px;
+  left: 142px;
+}
+
+.person_name_tarter {
+  top: 79px;
+  left: 159px;
+}
 
 .person__image {
-  max-width: 100%;
+   max-width: 100%; 
 }
 
-.person__image_size_l { width: 140px; }
-.person__image_size_m { width: 100px; }
-.person__image_size_s { width: 80px; }
+.person__image_size_l {
+ width: 140px;
+}
+
+.person__image_size_m {
+  width: 100px;
+}
+
+.person__image_size_s {
+width: 80px; 
+}
 
 .person__caption {
-  font-size: 14px;
   text-align: center;
-  margin: 0;
+  font-size: 14px;
+  margin: 0; 
 }
-
-/* Membership */
 .membership {
   padding: 100px 0 140px;
   background-color: #057bf2;
@@ -289,71 +316,85 @@
 
 .membership__steps {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
-  list-style: none;
+  justify-content: space-between;
+  column-gap: 20px;
+  list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-}
 
 .step {
   padding: 40px;
   width: 220px;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .step__title {
+  margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
   display: flex;
   align-items: center;
-  margin: 0;
 }
 
 .step__icon {
-  margin-left: 0;
   margin-right: 20px;
 }
 
 .step__description {
-  margin-top: 10px;
+  margin: 10px 0 0;
 }
 
-/* Footer completo e corrigido */
 .footer {
   background-color: #1f1f1f;
-  color: #ffffff;
+  color: #f2f2f2;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 80px 20px;
-  box-sizing: border-box;
+  padding: 80px 20px 20px;
 }
 
 .footer__columns {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
+  align-items: flex-start;
   max-width: 1600px;
   margin: 0 auto;
-}
-
-.footer__logo img {
-  width: 80px;
-  height: auto;
-  margin-left: 80px;
+  box-sizing: border-box;
+  
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
   min-width: 200px;
+  flex: 1 1 200px;
+}
+
+.footer__column_content_hours {
+  max-width: 240px;
+  margin-left: auto;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_social {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  margin-top: 60px;
+  margin-left: 80px;
+  width: 80px;
+  height: 58px;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .footer__column-heading {
   font-size: 20px;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -364,12 +405,12 @@
 }
 
 .footer__list-item {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 
 .footer__column-link {
-  color: #ffffff;
+  color: #f2f2f2;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -386,32 +427,21 @@
   height: 16px;
 }
 
-.footer__column_content_hours {
-  max-width: 240px;
-  gap: 16px;
-}
-
-.footer__column_content_social {
-  margin-right: 80px;
-}
-
 .footer__copyright {
-  margin-top: 40px;
+  margin-top: 60px;
+  text-align: start;
   font-size: 14px;
   color: #f2f2f2;
   margin-left: 80px;
   max-width: 1600px;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
+
   .footer__columns {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer__logo img {
-    margin: 40px 0 0 0;
   }
 
   .footer__column_content_hours,
@@ -419,8 +449,13 @@
     margin: 0 0 40px 0;
   }
 
+  .footer__logo {
+    margin: 40px 0 0 0;
+    align-self: flex-start;
+  }
+
   .footer__copyright {
-    margin-left: 0;
+    margin-left: 0; 
     text-align: center;
   }
-}
+} 
