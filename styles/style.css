@@ -1,3 +1,4 @@
+/* Página */
 .page {
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -46,12 +47,6 @@
   margin: auto;
 }
 
-/* Anchor to footer */
-.nav__link[href="#footer"] {
-  scroll-behavior: smooth;
-}
-
-/* Header Content */
 .header__content {
   display: flex;
   flex-direction: row;
@@ -247,7 +242,7 @@
   max-width: 100%;
 }
 
-/* People / Speakers */
+/* Pessoas */
 .person {
   position: absolute;
   display: flex;
@@ -325,66 +320,52 @@
   margin-top: 10px;
 }
 
-/* Footer */
+/* Footer completo e corrigido */
 .footer {
   background-color: #1f1f1f;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 80px 20px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .footer__columns {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
   max-width: 1600px;
   margin: 0 auto;
 }
 
+.footer__logo img {
+  width: 80px;
+  height: auto;
+  margin-left: 80px;
+}
+
 .footer__column {
-  flex: 1 1 200px;
   display: flex;
   flex-direction: column;
   min-width: 200px;
 }
 
-.footer__column_content_hours {
-  max-width: 240px;
-  margin-left: auto;
-  gap: 16px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__column_content_social {
-  margin-left: 80px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__logo {
-  width: 100px;
-  height: auto;
-  margin-top: 60px;
-  align-self: center;
-}
-
 .footer__column-heading {
   font-size: 20px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .footer__list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
-  padding-top: 20px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer__column-link {
@@ -405,31 +386,37 @@
   height: 16px;
 }
 
+.footer__column_content_hours {
+  max-width: 240px;
+  gap: 16px;
+}
+
+.footer__column_content_social {
+  margin-right: 80px;
+}
+
 .footer__copyright {
   margin-top: 40px;
   font-size: 14px;
   color: #f2f2f2;
-  text-align: start;
-  max-width: 1600px;
   margin-left: 80px;
-  margin-right: auto;
-  margin-bottom: 20px;
+  max-width: 1600px;
 }
 
-/* Responsive */
+/* Responsivo */
 @media (max-width: 768px) {
   .footer__columns {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__logo img {
+    margin: 40px 0 0 0;
   }
 
   .footer__column_content_hours,
   .footer__column_content_social {
     margin: 0 0 40px 0;
-  }
-
-  .footer__logo {
-    margin: 40px 0 0 0;
-    align-self: flex-start;
   }
 
   .footer__copyright {
