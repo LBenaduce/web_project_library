@@ -4,90 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biblioteca Triple Peaks</title>
-    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <nav class="nav">
-          <img src="./images/logo.svg" alt="Logotipo da Biblioteca Triple Peaks" class="nav__logo" />
-          <ul class="nav__links">
-            <li><a href="#staff" class="nav__link">Escolhas da Equipe</a></li>
-            <li><a href="#events" class="nav__link">Eventos</a></li>
-            <li><a href="#membership" class="nav__link">Seja um membro</a></li>
-            <li><a href="#contato" class="nav__link">Contatos</a></li>
-          </ul>
-        </nav>
-        <div class="header__content">
-          <div>
-            <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
-            <p class="header__description">
-              Temos o prazer de abrir as portas da nossa biblioteca a todos!
-              Venha expandir seus conhecimentos de desenvolvimento, ou apenas
-              use esse belo local para trabalhar ou estudar. Esse é um lugar
-              legal para estudantes legais!
-            </p>
-          </div>
-          <img src="./images/inside_the_library.png" alt="Ilustração da biblioteca por dentro" class="header__image" />
-        </div>
-        <div class="header__footer">
-          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
-        </div>
+        <!-- Conteúdo do cabeçalho -->
       </header>
 
       <main class="content">
-        <!-- Seções do main omitidas por brevidade, mas devem estar aqui -->
+        <!-- Outras seções como staff, events, membership... -->
+
+        <footer class="footer" id="contato">
+          <div class="footer__columns">
+            <div class="footer__column">
+              <img
+                src="./images/logo.svg"
+                alt="Logotipo da Biblioteca Triple Peaks"
+                class="footer__logo"
+                width="80"
+                height="58"
+              />
+            </div>
+
+            <div class="footer__column footer__column_content_hours">
+              <h3 class="footer__column-heading">Horário de Funcionamento</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">Dias úteis: 9h - 20h</li>
+                <li class="footer__list-item">Finais de semana: 10h às 18h</li>
+              </ul>
+            </div>
+
+            <div class="footer__column footer__column_content_social">
+              <h3 class="footer__column-heading">Redes Sociais</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__social-link">Facebook</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__social-link">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="footer__copyright">© 2025 XVIII Luigi Benaduce & TripleTen </p>
+        </footer>
       </main>
-
-      <footer class="footer" id="contato">
-        <div class="footer__columns">
-
-          <!-- Coluna 1: Logo -->
-          <div class="footer__column">
-            <img
-              src="./images/logo.svg"
-              alt="Logotipo da Biblioteca Triple Peaks"
-              class="footer__logo"
-              width="80"
-              height="58"
-            />
-            <p class="footer__logo-text">
-              <strong>Biblioteca</strong><br /><span style="color: #007bff;">Triple</span>
-            </p>
-          </div>
-
-          <!-- Coluna 2: Horários -->
-          <div class="footer__column footer__column_content_hours">
-            <h3 class="footer__column-heading">Horário de Funcionamento</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item">Dias úteis: 9h - 20h</li>
-              <li class="footer__list-item">Finais de semana: 10h às 18h</li>
-            </ul>
-          </div>
-
-          <!-- Coluna 3: Redes Sociais -->
-          <div class="footer__column footer__column_content_social">
-            <h3 class="footer__column-heading">Redes Sociais</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <img src="./images/icon_facebook.svg" alt="Facebook" class="footer__social-icon" />
-                Facebook
-              </li>
-              <li class="footer__list-item">
-                <img src="./images/icon_instagram.svg" alt="Instagram" class="footer__social-icon" />
-                Instagram
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <p class="footer__copyright">
-          © 2025 Luigi Benaduce & TripleTen
-        </p>
-      </footer>
     </div>
   </body>
 </html>
