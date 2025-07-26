@@ -327,7 +327,7 @@ width: 80px;
   padding: 40px;
   width: 220px;
   box-sizing: content-box;
-  flex-basis: auto;
+  flex-basis: content;
 }
 
 .step__title {
