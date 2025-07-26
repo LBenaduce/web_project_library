@@ -316,7 +316,7 @@ width: 80px;
 
 .membership__steps {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   column-gap: 20px;
   list-style-type: none;
   padding: 0;
@@ -350,6 +350,12 @@ width: 80px;
   color: #f2f2f2;
   font-family: Arial, Helvetica, sans-serif;
   padding: 80px 20px 20px;
+  adding-top:
+  padding-right:
+  padding-bottom: 
+  padding-left:
+  color: #f1f1f1
+  box-sizing: auto;
 }
 
 .footer__columns {
