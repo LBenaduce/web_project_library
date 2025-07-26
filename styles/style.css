@@ -316,8 +316,8 @@ width: 80px;
 
 .membership__steps {
   display: flex;
-  justify-content: space-around;
-  column-gap: 20px;
+  justify-content: center;
+  column-gap: 40px;
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
