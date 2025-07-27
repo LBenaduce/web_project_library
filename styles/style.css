@@ -357,10 +357,10 @@ width: 80px;
   padding-right: 80px;
   padding-bottom: 60px;
   padding-left: 80px;
-  color:#000000;
   box-sizing:content-box;
   width: 100%;
-  align-items: center;;
+  align-items: center;
+  margin-top: auto
 }
 
 .footer__columns {
