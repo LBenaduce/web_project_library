@@ -357,10 +357,10 @@ width: 80px;
   padding-right: 80px;
   padding-bottom: 60px;
   padding-left: 80px;
-  box-sizing:content-box;
+  box-sizing:border-box;
   width: 100%;
   align-items: center;
-  margin-top: auto
+  margin-top: auto;
 }
 
 .footer__columns {
