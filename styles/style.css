@@ -399,10 +399,10 @@ width: 80px;
 .footer__logo {
   margin-top: 60px;
   margin-left: 80px;
-  width: 80px;
-  height: 58px;
+  width: 58px;
+  height: 80px;
   flex-shrink: 0;
-  align-self: center;
+  align-self:flex-start;
 }
 
 .footer__column-heading {
