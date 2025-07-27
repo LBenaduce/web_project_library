@@ -327,7 +327,7 @@ width: 80px;
   padding: 40px;
   width: 220px;
   box-sizing: content-box;
-  flex-basis: fit-content;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -341,7 +341,7 @@ width: 80px;
 
 .step__icon {
   margin-right: 20px;
-  margin-left: 220px;
+  margin-left: 20px;
 }
 
 .step__description {
@@ -357,12 +357,10 @@ width: 80px;
   padding-right: 80px;
   padding-bottom: 60px;
   padding-left: 80px;
-  color: #f1f1f1
-  box-sizing: border-box;
+  color:#000000;
+  box-sizing:content-box;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: center;;
 }
 
 .footer__columns {
