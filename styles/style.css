@@ -349,7 +349,7 @@ width: 80px;
 }
 
 .footer {
-  background-color: #1f1f1f;
+  background-color:  #1f1f1f;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 80px 20px 20px;
@@ -422,7 +422,7 @@ width: 80px;
 }
 
 .footer__column-link {
-  color: #2f80ed;
+  color:  #ffffff;
   text-decoration: none;
   display: flex;
   align-items: center;
