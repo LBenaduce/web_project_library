@@ -391,10 +391,12 @@ width: 80px;
 
 .footer__column_content_hours {
   max-width: 240px;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
   max-width: 240px;
+  margin-left: 80px;
 }
 
 .footer__logo {
@@ -415,7 +417,7 @@ width: 80px;
 }
 
 .footer__list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
